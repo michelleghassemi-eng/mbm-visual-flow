@@ -1,355 +1,262 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.5">
-  <style type="text/css">
-    body {background-color: #f5f5f2}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px 'Helvetica Neue'; color: #535353; -webkit-text-stroke: #535353}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px 'Helvetica Neue'; color: #535353; -webkit-text-stroke: #535353}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #434343; -webkit-text-stroke: #434343}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626; background-color: #e3f1f6; min-height: 12.0px}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626; background-color: #ffffff}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626; background-color: #e3f7e2; min-height: 12.0px}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626; min-height: 12.0px}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626; background-color: #141322; min-height: 12.0px}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #434343; -webkit-text-stroke: #434343; background-color: #ffffff}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414; background-color: #ffffff}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Helvetica Neue'; color: #434343; -webkit-text-stroke: #434343}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414; min-height: 15.0px}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #141322}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #164063; -webkit-text-stroke: #164063; background-color: #e3f1f6}
-    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.5px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.5px 'Helvetica Neue'; color: #343434; -webkit-text-stroke: #343434}
-    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px 'Helvetica Neue'; color: #141322; -webkit-text-stroke: #141322}
-    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #0e4335; -webkit-text-stroke: #0e4335; background-color: #ccf4dc}
-    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414; background-color: #0e4335; min-height: 15.0px}
-    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #141322}
-    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #0e4335; -webkit-text-stroke: #0e4335; background-color: #e3f7e2}
-    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #7e1c19; -webkit-text-stroke: #7e1c19; background-color: #f8d2cf}
-    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414; background-color: #7e1c19; min-height: 15.0px}
-    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #0e4335}
-    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #7e1c19; -webkit-text-stroke: #7e1c19}
-    p.p31 {margin: 0.0px 0.0px 0.0px 0.0px; font: 7.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414; background-color: #146852; min-height: 15.0px}
-    p.p33 {margin: 0.0px 0.0px 0.0px 0.0px; font: 7.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #146852}
-    p.p34 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Helvetica Neue'; color: #0e4335; -webkit-text-stroke: #0e4335}
-    p.p35 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Helvetica Neue'; color: #7e1c19; -webkit-text-stroke: #7e1c19}
-    p.p36 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #69540a; -webkit-text-stroke: #69540a}
-    p.p37 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #c73f05; -webkit-text-stroke: #c73f05}
-    p.p38 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #c99e0f}
-    p.p39 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575}
-    p.p40 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #434343; -webkit-text-stroke: #434343}
-    p.p41 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #9a9a9a}
-    p.p42 {margin: 0.0px 0.0px 0.0px 0.0px; font: 7.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #c73f05}
-    p.p43 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #757575}
-    p.p44 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414}
-    p.p45 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #878787; -webkit-text-stroke: #878787}
-    p.p46 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #434343; -webkit-text-stroke: #434343}
-    p.p47 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414; background-color: #9a9a9a; min-height: 15.0px}
-    p.p48 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px 'Helvetica Neue'; color: #434343; -webkit-text-stroke: #434343}
-    p.p49 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #434343}
-    p.p50 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #262626}
-    p.p51 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px 'Helvetica Neue'; color: #434343; -webkit-text-stroke: #434343; background-color: #ececec}
-    p.p52 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575; min-height: 11.0px}
-    p.p53 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575; background-color: #ffffff}
-    span.s1 {font: 18.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: #ffffff}
-    span.s2 {font-kerning: none; background-color: #ffffff}
-    span.s3 {font-kerning: none}
-    span.s4 {font: 10.0px 'STIX Two Math'; font-kerning: none}
-    span.s5 {font: 10.0px Menlo; font-kerning: none; background-color: #ffffff}
-    span.s6 {font-kerning: none; color: #262626; -webkit-text-stroke: 0px #262626}
-    span.s7 {font: 12.0px 'Helvetica Neue'; font-kerning: none; color: #141414; -webkit-text-stroke: 0px #141414}
-    span.s8 {font: 10.0px 'STIX Two Math'; font-kerning: none; background-color: #ffffff}
-    span.s9 {font-kerning: none; background-color: #f5f5f2}
-    span.s10 {font: 9.0px 'STIX Two Math'; font-kerning: none}
-    span.s11 {font: 9.0px Menlo; font-kerning: none}
-    span.s12 {font: 11.5px '.Apple Color Emoji UI'; font-kerning: none; background-color: #ffffff}
-    span.s13 {font-kerning: none; background-color: #69540a}
-    span.s14 {font: 11.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: #fffde1}
-    span.s15 {font-kerning: none; background-color: #fffde1}
-    span.s16 {font: 9.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: #fff0d9}
-    span.s17 {font-kerning: none; background-color: #fff0d9}
-    span.s18 {font: 9.0px 'STIX Two Math'; font-kerning: none; background-color: #fffde1}
-    span.s19 {font: 9.0px Menlo; font-kerning: none; background-color: #fffde1}
-    span.s20 {font: 9.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: #ecf1ff}
-    span.s21 {font-kerning: none; background-color: #ecf1ff}
-    span.s22 {font: 9.0px '.Apple Color Emoji UI'; font-kerning: none}
-    span.s23 {font: 11.0px '.Apple Color Emoji UI'; font-kerning: none}
-    span.s24 {font: 9.0px 'STIX Two Math'; font-kerning: none; background-color: #ffffff}
-    span.s25 {font: 9.0px Menlo; font-kerning: none; background-color: #ffffff}
-  </style>
-</head>
-<body>
-<h1 style="margin: 0.0px 0.0px 4.0px 0.0px; text-align: center; font: 18.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414"><span class="s1">🥛</span><span class="s2"> Milk by Mom — Daily Production Flow</span></h1>
-<p class="p2"><span class="s2">Flujo de Producción Diario</span></p>
-<p class="p3"><span class="s2">Shift 1: 6:30am–2pm  ·  Load deadline: 1:00pm  ·  48-hour freeze-dry cycle</span></p>
-<p class="p3"><span class="s2">Turno 1: 6:30am–2pm  ·  Plazo de carga: 1:00pm  ·  Ciclo de 48 horas</span></p>
-<p class="p4"><span class="s2">KEY / CLAVE</span></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p6"><span class="s4">⏱</span><span class="s3"> Time-based / Basada en tiempo</span></p>
-<p class="p7"><span class="s3"></span><br></p>
-<p class="p8"><span class="s5">⚖</span><span class="s2"> Oz-based / Basada en oz</span></p>
-<p class="p9"><span class="s3"></span><br></p>
-<p class="p8"><span class="s2">Unload stream / Descarga</span></p>
-<p class="p9"><span class="s3"></span><br></p>
-<p class="p8"><span class="s2">RC / Load stream / Carga</span></p>
-<p class="p9"><span class="s3"></span><br></p>
-<p class="p6"><span class="s3">Flex time / Tiempo libre</span></p>
-<p class="p10"><span class="s3"></span><br></p>
-<p class="p11"><span class="s6">Decision point / Decisión</span><span class="s7"> </span><span class="s3">Left = English  |  Right = Español</span></p>
-<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #141414; -webkit-text-stroke: #141414"><span class="s2">HOW TO READ THIS CHART / CÓMO LEER ESTE DIAGRAMA</span></h3>
-<p class="p13"><span class="s2">1.</span></p>
-<p class="p13"><span class="s2">Follow the flow top to bottom. / Sigue el flujo de arriba hacia abajo.</span></p>
-<p class="p13"><span class="s2">2.</span></p>
-<p class="p13"><span class="s2">At diamonds: YES = continue down, NO = follow the branch. / En rombos: SÍ = continúa, NO = sigue la rama.</span></p>
-<p class="p13"><span class="s2">3.</span></p>
-<p class="p13"><span class="s8">⏱</span><span class="s2"> tasks take a fixed time. </span><span class="s5">⚖</span><span class="s2"> tasks depend on how many oz you're processing. / </span><span class="s8">⏱</span><span class="s2"> = tiempo fijo. </span><span class="s5">⚖</span><span class="s2"> = depende de las oz.</span></p>
-<p class="p13"><span class="s2">4.</span></p>
-<p class="p14"><span class="s3">When machine is running → do FLEX tasks. Never wait idle. / Cuando la máquina trabola → haz tareas FLEX. Nunca esperes.</span></p>
-<p class="p15"><span class="s9">START OF SHIFT / INICIO DE TURNO — 6:30AM</span></p>
-<p class="p16"><span class="s3"></span><br></p>
-<p class="p17"><span class="s3">A1</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Inspect milk from machines (48 hrs ago)</span></p>
-<p class="p20"><span class="s2">6–16 min depending on machine size</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Inspeccionar leche de máquinas (hace 48 hrs)</span></p>
-<p class="p20"><span class="s2">6–16 min según el tamaño de la máquina</span></p>
-<p class="p17"><span class="s3">A2</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Water Activity Test (Aw Test)</span></p>
-<p class="p20"><span class="s2">2–7 min</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Prueba de Actividad de Agua (Prueba Aw)</span></p>
-<p class="p20"><span class="s2">2–7 min</span></p>
-<p class="p17"><span class="s3">A3</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Unload dried milk batch from machine</span></p>
-<p class="p20"><span class="s2">2–6 min · Medium=2 · Large=3 · XL=6 · Mega=4</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Descargar lote de leche seca de la máquina</span></p>
-<p class="p20"><span class="s2">2–6 min · Medium=2 · Large=3 · XL=6 · Mega=4</span></p>
-<p class="p17"><span class="s3">A4</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Start defrost → then pivot to Stream B</span></p>
-<p class="p20"><span class="s2">Medium/Large: 120 min · XL/Mega: 60 min (runs unattended)</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Iniciar descongelado → luego ir al Flujo B</span></p>
-<p class="p20"><span class="s2">Medium/Large: 120 min · XL/Mega: 60 min (trabaja solo)</span></p>
-<p class="p15"><span class="s3">DECISION / DECISIÓN</span></p>
-<p class="p22"><span class="s2">Machine</span></p>
-<p class="p22"><span class="s2">defrosting?</span></p>
-<p class="p22"><span class="s2">¿Máquina</span></p>
-<p class="p22"><span class="s2">descongelando?</span></p>
-<p class="p23"><span class="s3">YES — SÍ</span></p>
-<p class="p24"><span class="s3"></span><br></p>
-<p class="p25"><span class="s3">GO→B</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p19"><span class="s2">Move to Stream B — cut milk bags</span></p>
-<p class="p20"><span class="s2">Don't wait — use defrost time</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p21"><span class="s2">Ir al Flujo B — cortar bolsas</span></p>
-<p class="p20"><span class="s2">No esperar — usar el tiempo del descongelado</span></p>
-<p class="p27"><span class="s3">NO — STILL ACTIVE</span></p>
-<p class="p28"><span class="s3"></span><br></p>
-<p class="p25"><span class="s3">WAIT</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Wait for defrost to start, then pivot</span></p>
-<p class="p20"><span class="s2">Assist another processor with Stream A</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Esperar a que inicie, luego cambiar</span></p>
-<p class="p20"><span class="s2">Asistir a otro procesador con el Flujo A</span></p>
-<p class="p16"><span class="s3"></span><br></p>
-<p class="p15"><span class="s9">STREAM B — LOAD TODAY'S MACHINES / FLUJO B — CARGAR MÁQUINAS DE HOY</span></p>
-<p class="p16"><span class="s3"></span><br></p>
-<p class="p17"><span class="s3">B1</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Milk receiving — label, enter SUE, store in freezer</span></p>
-<p class="p20"><span class="s2">5–8 min per bag</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Recepción de leche — etiquetar, ingresar SUE, congelar</span></p>
-<p class="p20"><span class="s2">5–8 min por bolsa</span></p>
-<p class="p17"><span class="s3">B2</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Prepare scalpel and bag for cutting</span></p>
-<p class="p20"><span class="s2">1–3 min</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Preparar bisturí y bolsa para cortar</span></p>
-<p class="p20"><span class="s2">1–3 min</span></p>
-<p class="p17"><span class="s3">B3</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p19"><span class="s2">Remove plastic from milk bags (cutting)</span></p>
-<p class="p20"><span class="s2">4.6 sec/oz avg  ·  286oz batch ≈ 22 min</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p21"><span class="s2">Retirar plástico de bolsas de leche (corte)</span></p>
-<p class="p20"><span class="s2">4.6 seg/oz promedio  ·  lote de 286oz ≈ 22 min</span></p>
-<p class="p17"><span class="s3">B4</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Label / prepare milk bags</span></p>
-<p class="p20"><span class="s2">2–12 min</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Etiquetar / preparar bolsas de leche</span></p>
-<p class="p20"><span class="s2">2–12 min</span></p>
-<p class="p29"><span class="s3">B5</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p19"><span class="s12">🔬</span><span class="s2"> Robot Coupe — Process milk</span></p>
-<p class="p30"><span class="s2">⚠ ONLY 1 MACHINE — BOTTLENECK · 7.6 sec/oz avg · 286oz ≈ 36 min</span></p>
-<p class="p20"><span class="s2">Max 10 batches/day before 1pm deadline</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p21"><span class="s12">🔬</span><span class="s2"> Robot Coupe — Procesar leche</span></p>
-<p class="p30"><span class="s2">⚠ SOLO 1 MÁQUINA — CUELLO DE BOTELLA · 7.6 seg/oz promedio</span></p>
-<p class="p20"><span class="s2">Máximo 10 lotes/día antes del plazo de la 1pm</span></p>
-<p class="p17"><span class="s3">B6</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Load machine with trays</span></p>
-<p class="p20"><span class="s2">2–9 min · Medium=3 · Large=2 · XL=9 · Mega=10</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Cargar máquina con bandejas</span></p>
-<p class="p20"><span class="s2">2–9 min · Medium=3 · Large=2 · XL=9 · Mega=10</span></p>
-<p class="p15"><span class="s3">DECISION / DECISIÓN</span></p>
-<p class="p22"><span class="s2">More</span></p>
-<p class="p22"><span class="s2">machines</span></p>
-<p class="p22"><span class="s2">to load?</span></p>
-<p class="p22"><span class="s2">¿Más</span></p>
-<p class="p22"><span class="s2">máquinas?</span></p>
-<p class="p23"><span class="s3">YES — SÍ</span></p>
-<p class="p24"><span class="s3"></span><br></p>
-<p class="p31"><span class="s13">FLEX</span></p>
-<p class="p19"><span class="s2">Machine running → FLEX while waiting</span></p>
-<p class="p20"><span class="s2">Return to B3 for next batch when RC is free</span></p>
-<p class="p21"><span class="s2">Máquina corriendo → FLEX mientras espera</span></p>
-<p class="p20"><span class="s2">Volver a B3 para el siguiente lote cuando RC esté libre</span></p>
-<p class="p27"><span class="s3">NO — DONE BY 1PM</span></p>
-<p class="p32"><span class="s3"></span><br></p>
-<p class="p33"><span class="s3">A5-A7</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Return to Stream A — finish unload tasks</span></p>
-<p class="p20"><span class="s2">Store/record · wash trays · clean machine</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Volver al Flujo A — terminar tareas de descarga</span></p>
-<p class="p20"><span class="s2">Guardar/registrar · lavar · limpiar máquina</span></p>
-<p class="p16"><span class="s3"></span><br></p>
-<p class="p17"><span class="s3">A5</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p19"><span class="s2">Store dried milk · Record weights · Label · Freeze</span></p>
-<p class="p20"><span class="s2">2–3 min per tray</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p21"><span class="s2">Guardar leche seca · Registrar pesos · Etiquetar · Congelar</span></p>
-<p class="p20"><span class="s2">2–3 min por bandeja</span></p>
-<p class="p17"><span class="s3">A6</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Wash trays</span></p>
-<p class="p20"><span class="s2">3–6 min · Medium=3 · Large=5 · XL=5 · Mega=5</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Lavar bandejas</span></p>
-<p class="p20"><span class="s2">3–6 min · Medium=3 · Large=5 · XL=5 · Mega=5</span></p>
-<p class="p17"><span class="s3">A7</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Clean machine</span></p>
-<p class="p20"><span class="s2">6–23 min · Medium=15 · Large=12 · XL=6 · Mega=19</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Limpiar máquina</span></p>
-<p class="p20"><span class="s2">6–23 min · Medium=15 · Large=12 · XL=6 · Mega=19</span></p>
-<p class="p15"><span class="s3">DECISION / DECISIÓN</span></p>
-<p class="p22"><span class="s2">Past</span></p>
-<p class="p22"><span class="s2">1:00pm?</span></p>
-<p class="p22"><span class="s2">¿Pasó</span></p>
-<p class="p22"><span class="s2">la 1pm?</span></p>
-<p class="p23"><span class="s3">YES — SÍ</span></p>
-<p class="p24"><span class="s3"></span><br></p>
-<p class="p34"><span class="s3">↓ Go to FLEX tasks below<br>
-↓ Ir a tareas FLEX abajo</span></p>
-<p class="p27"><span class="s3">NO — BEFORE 1PM</span></p>
-<p class="p28"><span class="s3"></span><br></p>
-<p class="p35"><span class="s3">↑ Return to B1 for next machine<br>
-↑ Volver a B1 para siguiente máquina</span></p>
-<p class="p16"><span class="s3"></span><br></p>
-<p class="p15"><span class="s9">AFTER 1:00PM — FLEX TASKS / DESPUÉS DE LA 1PM — TAREAS FLEX</span></p>
-<p class="p16"><span class="s3"></span><br></p>
-<p class="p36"><span class="s14">⚡</span><span class="s15"> All machines loaded — complete REQUIRED tasks first, then additional as time allows / Todas las máquinas cargadas — completar tareas REQUERIDAS primero</span></p>
-<p class="p37"><span class="s16">✅</span><span class="s17"> REQUIRED / REQUERIDO</span></p>
-<p class="p38"><span class="s3">P1</span></p>
-<p class="p13"><span class="s15">Laundry / Lavandería</span></p>
-<p class="p39"><span class="s18">⏱</span><span class="s15"> ~30 min · REQUIRED · Requerido</span></p>
-<p class="p38"><span class="s3">P2</span></p>
-<p class="p13"><span class="s15">Cut — same-day remaining batches</span></p>
-<p class="p13"><span class="s15">Cortar — lotes restantes del día</span></p>
-<p class="p39"><span class="s19">⚖</span><span class="s15"> varies by oz · REQUIRED · Requerido</span></p>
-<p class="p38"><span class="s3">P4</span></p>
-<p class="p13"><span class="s15">Data entry + SUE records + Create templates &amp; labels</span></p>
-<p class="p13"><span class="s15">Entrada de datos + registros SUE + Crear plantillas y etiquetas</span></p>
-<p class="p39"><span class="s18">⏱</span><span class="s15"> ~20–35 min · REQUIRED · Requerido</span></p>
-<p class="p40"><span class="s20">➕</span><span class="s21"> ADDITIONAL — AS NEEDED / TIME ALLOWS · SEGÚN SEA NECESARIO / SI HAY TIEMPO</span></p>
-<p class="p41"><span class="s3">ADD</span></p>
-<p class="p13"><span class="s15">Cut — next day+ batches</span></p>
-<p class="p13"><span class="s15">Cortar — lotes del día siguiente+</span></p>
-<p class="p39"><span class="s19">⚖</span><span class="s15"> varies by oz</span></p>
-<p class="p41"><span class="s3">ADD</span></p>
-<p class="p13"><span class="s15">Processing support — check with manager first</span></p>
-<p class="p13"><span class="s15">Apoyo en procesamiento — consultar con manager primero</span></p>
-<p class="p39"><span class="s19">⚖</span><span class="s15"> varies · manager approval required</span></p>
-<p class="p16"><span class="s3"></span><br></p>
-<p class="p15"><span class="s9">PACKAGER FLOW / FLUJO DE EMPACADORAS — 9:00AM START</span></p>
-<p class="p16"><span class="s3"></span><br></p>
-<p class="p42"><span class="s3">P2–P7</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p19"><span class="s2">Print templates + labels → Pack Little Sips + Big Sips → Branded box</span></p>
-<p class="p20"><span class="s2">Print template 3 min · Little Sips labels 2–28 min · Packing 12–165 min · NO process tasks</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p21"><span class="s2">Imprimir plantillas + etiquetas → Empacar → Caja de marca</span></p>
-<p class="p20"><span class="s2">Plantilla 3 min · Etiquetas 2–28 min · Empacar 12–165 min · SIN tareas de proceso</span></p>
-<p class="p16"><span class="s3"></span><br></p>
-<p class="p15"><span class="s9">FRONT OF HOUSE — COMING SOON / PRÓXIMAMENTE</span></p>
-<p class="p16"><span class="s3"></span><br></p>
-<p class="p43"><span class="s3">F1</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p44"><span class="s2">Create templates &amp; labels (Back of House)</span></p>
-<p class="p45"><span class="s2">Produced in P4 flex task → ready to transfer to FOH</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p46"><span class="s2">Crear plantillas y etiquetas (Trastienda)</span></p>
-<p class="p45"><span class="s2">Producidas en tarea flex P4 → listas para transferir a FOH</span></p>
-<p class="p47"><span class="s3"></span><br></p>
-<p class="p43"><span class="s3">F2</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p44"><span class="s2">Pack product (Back of House / Packager)</span></p>
-<p class="p45"><span class="s2">Little Sips + Big Sips packed per template specs</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p46"><span class="s2">Empacar producto (Trastienda / Empacadora)</span></p>
-<p class="p45"><span class="s2">Little Sips + Big Sips empacados según especificaciones</span></p>
-<p class="p47"><span class="s3"></span><br></p>
-<p class="p48"><span class="s22">📦</span><span class="s3"> Transfer to Front of House / Transferir al Frente</span></p>
-<p class="p47"><span class="s3"></span><br></p>
-<p class="p49"><span class="s3">F3</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIME</span></p>
-<p class="p44"><span class="s2">Bring packed product + templates + labels to FOH</span></p>
-<p class="p45"><span class="s2">All materials included: labels, templates, packed product</span></p>
-<p class="p18"><span class="s10">⏱</span><span class="s3"> TIEMPO</span></p>
-<p class="p46"><span class="s2">Llevar producto empacado + plantillas + etiquetas al FOH</span></p>
-<p class="p45"><span class="s2">Todos los materiales incluidos: etiquetas, plantillas, producto</span></p>
-<p class="p47"><span class="s3"></span><br></p>
-<p class="p50"><span class="s3">F4</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p44"><span class="s2">FOH team: Label &amp; final pack with all materials on hand</span></p>
-<p class="p45"><span class="s2">Labels applied · verified against template · ready for pickup/ship</span></p>
-<p class="p26"><span class="s11">⚖</span><span class="s3"> OZ</span></p>
-<p class="p46"><span class="s2">Equipo FOH: Etiquetar y empacar final con todos los materiales</span></p>
-<p class="p45"><span class="s2">Etiquetas aplicadas · verificadas con plantilla · listas para envío/recogida</span></p>
-<p class="p47"><span class="s3"></span><br></p>
-<p class="p16"><span class="s3"></span><br></p>
-<p class="p51"><span class="s23">✅</span><span class="s3"> Ready for customer / Listo para el cliente</span></p>
-<p class="p39"><span class="s2">Notes / Notas:</span></p>
-<p class="p39"><span class="s2">Time averages from measured worker data (n=39 batches, 4 workers). RC team avg = 7.6 sec/oz. Cut team avg = 4.6 sec/oz. Avg batch = 286oz.</span></p>
-<p class="p39"><span class="s2">RC bottleneck: max 10 machines/day at current speeds. 11+ machines requires 2nd Robot Coupe.</span></p>
-<p class="p39"><span class="s2">Machine unload times: Medium 39 min · Large 36 min · XL 46 min · Mega 59 min (full cycle including defrost excluded — runs unattended).</span></p>
-<p class="p39"><span class="s24">⏱</span><span class="s2"> = fixed duration regardless of volume  ·  </span><span class="s25">⚖</span><span class="s2"> = scales with oz being processed</span></p>
-<p class="p52"><span class="s3"></span><br></p>
-<p class="p53"><span class="s3">Promedios de tiempos basados en datos medidos (n=39 lotes, 4 trabajadoras). Objetivo RC: ≤7.6 seg/oz. Objetivo corte: ≤4.6 seg/oz.</span></p>
-</body>
-</html>
+🥛 Milk by Mom — Daily Production Flow
+Flujo de Producción Diario
+Shift 1: 6:30am–2pm  ·  Load deadline: 1:00pm  ·  48-hour freeze-dry cycle
+Turno 1: 6:30am–2pm  ·  Plazo de carga: 1:00pm  ·  Ciclo de 48 horas
+KEY / CLAVE
+
+⏱ Time-based / Basada en tiempo
+
+⚖ Oz-based / Basada en oz
+
+Unload stream / Descarga
+
+RC / Load stream / Carga
+
+Flex time / Tiempo libre
+
+Decision point / Decisión Left = English  |  Right = Español
+HOW TO READ THIS CHART / CÓMO LEER ESTE DIAGRAMA
+1.
+Follow the flow top to bottom. / Sigue el flujo de arriba hacia abajo.
+2.
+At diamonds: YES = continue down, NO = follow the branch. / En rombos: SÍ = continúa, NO = sigue la rama.
+3.
+⏱ tasks take a fixed time. ⚖ tasks depend on how many oz you're processing. / ⏱ = tiempo fijo. ⚖ = depende de las oz.
+4.
+When machine is running → do FLEX tasks. Never wait idle. / Cuando la máquina trabola → haz tareas FLEX. Nunca esperes.
+START OF SHIFT / INICIO DE TURNO — 6:30AM
+
+A1
+⏱ TIME
+Inspect milk from machines (48 hrs ago)
+6–16 min depending on machine size
+⏱ TIEMPO
+Inspeccionar leche de máquinas (hace 48 hrs)
+6–16 min según el tamaño de la máquina
+A2
+⏱ TIME
+Water Activity Test (Aw Test)
+2–7 min
+⏱ TIEMPO
+Prueba de Actividad de Agua (Prueba Aw)
+2–7 min
+A3
+⏱ TIME
+Unload dried milk batch from machine
+2–6 min · Medium=2 · Large=3 · XL=6 · Mega=4
+⏱ TIEMPO
+Descargar lote de leche seca de la máquina
+2–6 min · Medium=2 · Large=3 · XL=6 · Mega=4
+A4
+⏱ TIME
+Start defrost → then pivot to Stream B
+Medium/Large: 120 min · XL/Mega: 60 min (runs unattended)
+⏱ TIEMPO
+Iniciar descongelado → luego ir al Flujo B
+Medium/Large: 120 min · XL/Mega: 60 min (trabaja solo)
+DECISION / DECISIÓN
+Machine
+defrosting?
+¿Máquina
+descongelando?
+YES — SÍ
+
+GO→B
+⚖ OZ
+Move to Stream B — cut milk bags
+Don't wait — use defrost time
+⚖ OZ
+Ir al Flujo B — cortar bolsas
+No esperar — usar el tiempo del descongelado
+NO — STILL ACTIVE
+
+WAIT
+⏱ TIME
+Wait for defrost to start, then pivot
+Assist another processor with Stream A
+⏱ TIEMPO
+Esperar a que inicie, luego cambiar
+Asistir a otro procesador con el Flujo A
+
+STREAM B — LOAD TODAY'S MACHINES / FLUJO B — CARGAR MÁQUINAS DE HOY
+
+B1
+⏱ TIME
+Milk receiving — label, enter SUE, store in freezer
+5–8 min per bag
+⏱ TIEMPO
+Recepción de leche — etiquetar, ingresar SUE, congelar
+5–8 min por bolsa
+B2
+⏱ TIME
+Prepare scalpel and bag for cutting
+1–3 min
+⏱ TIEMPO
+Preparar bisturí y bolsa para cortar
+1–3 min
+B3
+⚖ OZ
+Remove plastic from milk bags (cutting)
+4.6 sec/oz avg  ·  286oz batch ≈ 22 min
+⚖ OZ
+Retirar plástico de bolsas de leche (corte)
+4.6 seg/oz promedio  ·  lote de 286oz ≈ 22 min
+B4
+⏱ TIME
+Label / prepare milk bags
+2–12 min
+⏱ TIEMPO
+Etiquetar / preparar bolsas de leche
+2–12 min
+B5
+⚖ OZ
+🔬 Robot Coupe — Process milk
+⚠ ONLY 1 MACHINE — BOTTLENECK · 7.6 sec/oz avg · 286oz ≈ 36 min
+Max 10 batches/day before 1pm deadline
+⚖ OZ
+🔬 Robot Coupe — Procesar leche
+⚠ SOLO 1 MÁQUINA — CUELLO DE BOTELLA · 7.6 seg/oz promedio
+Máximo 10 lotes/día antes del plazo de la 1pm
+B6
+⏱ TIME
+Load machine with trays
+2–9 min · Medium=3 · Large=2 · XL=9 · Mega=10
+⏱ TIEMPO
+Cargar máquina con bandejas
+2–9 min · Medium=3 · Large=2 · XL=9 · Mega=10
+DECISION / DECISIÓN
+More
+machines
+to load?
+¿Más
+máquinas?
+YES — SÍ
+
+FLEX
+Machine running → FLEX while waiting
+Return to B3 for next batch when RC is free
+Máquina corriendo → FLEX mientras espera
+Volver a B3 para el siguiente lote cuando RC esté libre
+NO — DONE BY 1PM
+
+A5-A7
+⏱ TIME
+Return to Stream A — finish unload tasks
+Store/record · wash trays · clean machine
+⏱ TIEMPO
+Volver al Flujo A — terminar tareas de descarga
+Guardar/registrar · lavar · limpiar máquina
+
+A5
+⚖ OZ
+Store dried milk · Record weights · Label · Freeze
+2–3 min per tray
+⚖ OZ
+Guardar leche seca · Registrar pesos · Etiquetar · Congelar
+2–3 min por bandeja
+A6
+⏱ TIME
+Wash trays
+3–6 min · Medium=3 · Large=5 · XL=5 · Mega=5
+⏱ TIEMPO
+Lavar bandejas
+3–6 min · Medium=3 · Large=5 · XL=5 · Mega=5
+A7
+⏱ TIME
+Clean machine
+6–23 min · Medium=15 · Large=12 · XL=6 · Mega=19
+⏱ TIEMPO
+Limpiar máquina
+6–23 min · Medium=15 · Large=12 · XL=6 · Mega=19
+DECISION / DECISIÓN
+Past
+1:00pm?
+¿Pasó
+la 1pm?
+YES — SÍ
+
+↓ Go to FLEX tasks below ↓ Ir a tareas FLEX abajo
+NO — BEFORE 1PM
+
+↑ Return to B1 for next machine ↑ Volver a B1 para siguiente máquina
+
+AFTER 1:00PM — FLEX TASKS / DESPUÉS DE LA 1PM — TAREAS FLEX
+
+⚡ All machines loaded — complete REQUIRED tasks first, then additional as time allows / Todas las máquinas cargadas — completar tareas REQUERIDAS primero
+✅ REQUIRED / REQUERIDO
+P1
+Laundry / Lavandería
+⏱ ~30 min · REQUIRED · Requerido
+P2
+Cut — same-day remaining batches
+Cortar — lotes restantes del día
+⚖ varies by oz · REQUIRED · Requerido
+P4
+Data entry + SUE records + Create templates & labels
+Entrada de datos + registros SUE + Crear plantillas y etiquetas
+⏱ ~20–35 min · REQUIRED · Requerido
+➕ ADDITIONAL — AS NEEDED / TIME ALLOWS · SEGÚN SEA NECESARIO / SI HAY TIEMPO
+ADD
+Cut — next day+ batches
+Cortar — lotes del día siguiente+
+⚖ varies by oz
+ADD
+Processing support — check with manager first
+Apoyo en procesamiento — consultar con manager primero
+⚖ varies · manager approval required
+
+PACKAGER FLOW / FLUJO DE EMPACADORAS — 9:00AM START
+
+P2–P7
+⏱ TIME
+Print templates + labels → Pack Little Sips + Big Sips → Branded box
+Print template 3 min · Little Sips labels 2–28 min · Packing 12–165 min · NO process tasks
+⏱ TIEMPO
+Imprimir plantillas + etiquetas → Empacar → Caja de marca
+Plantilla 3 min · Etiquetas 2–28 min · Empacar 12–165 min · SIN tareas de proceso
+
+FRONT OF HOUSE — COMING SOON / PRÓXIMAMENTE
+
+F1
+⏱ TIME
+Create templates & labels (Back of House)
+Produced in P4 flex task → ready to transfer to FOH
+⏱ TIEMPO
+Crear plantillas y etiquetas (Trastienda)
+Producidas en tarea flex P4 → listas para transferir a FOH
+
+F2
+⚖ OZ
+Pack product (Back of House / Packager)
+Little Sips + Big Sips packed per template specs
+⚖ OZ
+Empacar producto (Trastienda / Empacadora)
+Little Sips + Big Sips empacados según especificaciones
+
+📦 Transfer to Front of House / Transferir al Frente
+
+F3
+⏱ TIME
+Bring packed product + templates + labels to FOH
+All materials included: labels, templates, packed product
+⏱ TIEMPO
+Llevar producto empacado + plantillas + etiquetas al FOH
+Todos los materiales incluidos: etiquetas, plantillas, producto
+
+F4
+⚖ OZ
+FOH team: Label & final pack with all materials on hand
+Labels applied · verified against template · ready for pickup/ship
+⚖ OZ
+Equipo FOH: Etiquetar y empacar final con todos los materiales
+Etiquetas aplicadas · verificadas con plantilla · listas para envío/recogida
+
+
+✅ Ready for customer / Listo para el cliente
+Notes / Notas:
+Time averages from measured worker data (n=39 batches, 4 workers). RC team avg = 7.6 sec/oz. Cut team avg = 4.6 sec/oz. Avg batch = 286oz.
+RC bottleneck: max 10 machines/day at current speeds. 11+ machines requires 2nd Robot Coupe.
+Machine unload times: Medium 39 min · Large 36 min · XL 46 min · Mega 59 min (full cycle including defrost excluded — runs unattended).
+⏱ = fixed duration regardless of volume  ·  ⚖ = scales with oz being processed
+
+Promedios de tiempos basados en datos medidos (n=39 lotes, 4 trabajadoras). Objetivo RC: ≤7.6 seg/oz. Objetivo corte: ≤4.6 seg/oz.
